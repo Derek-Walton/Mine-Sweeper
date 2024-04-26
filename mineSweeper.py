@@ -242,9 +242,6 @@ def recursion(win, x, y, mineDict, clearedBoxColour1 , clearedBoxColour2, mapSiz
 
 
 def mineSweeperCreation(mapSize, difficulty):
-
-    print(mapSize, difficulty)
-
     if mapSize == "small":
         mapSize = 10
     elif mapSize == "medium":
@@ -298,8 +295,8 @@ def mineSweeperCreation(mapSize, difficulty):
         for x in range(0, mapSizeLength, squareSize):
 
         # visibley Draws the mines for testing purposes
-            if mineDict[f"mineDict{x}{y}"][0]:
-                mineDict[f"mineDict{x}{y}"][1].setFill("red")
+            # if mineDict[f"mineDict{x}{y}"][0]:
+            #     mineDict[f"mineDict{x}{y}"][1].setFill("red")
             
             numberOfMinesAroundBox = 0
 
